@@ -7,13 +7,13 @@ Package.describe({
 
 // Server-side push deps
 Npm.depends({
-  'apn' : '1.6.2', // '1.7.4', // working: 1.6.2
+  'apn': '1.6.2', // '1.7.4', // working: 1.6.2
   'node-gcm' : '0.9.6', // '0.12.0' // working: 0.9.6
 });
 
 Cordova.depends({
-  'phonegap-plugin-push': '1.6.3', // 1.3.0
-  'cordova-plugin-device': '1.1.4',
+  'phonegap-plugin-push': '2.1.2',
+  'cordova-plugin-device': '2.0.2'
 });
 
 Package.registerBuildPlugin({
@@ -29,7 +29,7 @@ Package.registerBuildPlugin({
   }
 });
 
-Package.onUse(function(api) {
+Package.onUse(function (api) {
   api.versionsFrom('1.2');
   api.use(['ecmascript']);
 
@@ -42,7 +42,7 @@ Package.onUse(function(api) {
   // Keep track of users in the appCollection
   api.use([
     'accounts-base'
-  ], ['client', 'server'], { weak: true });
+  ], ['client', 'server'], {weak: true});
 
   api.use([
     'raix:eventstate@0.0.2',
@@ -59,7 +59,7 @@ Package.onUse(function(api) {
 
   // Common api
   api.addFiles([
-    'lib/common/main.js',
+    'lib/common/main.js'
   ], ['web.browser', 'server']);
 
   // Common api
@@ -77,10 +77,10 @@ Package.onUse(function(api) {
 
   api.export('Push');
 
-  api.export('_matchToken', { testOnly: true });
-  api.export('checkClientSecurity', { testOnly: true });
-  api.export('initPushUpdates', { testOnly: true });
-  api.export('_replaceToken', { testOnly: true });
-  api.export('_removeToken', { testOnly: true });
+  api.export('_matchToken', {testOnly: true});
+  api.export('checkClientSecurity', {testOnly: true});
+  api.export('initPushUpdates', {testOnly: true});
+  api.export('_replaceToken', {testOnly: true});
+  api.export('_removeToken', {testOnly: true});
 
 });
