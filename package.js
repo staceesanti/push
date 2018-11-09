@@ -15,7 +15,7 @@ Npm.depends({
 
 Cordova.depends({
   'phonegap-plugin-push': '1.6.3', // 1.3.0
-  'cordova-plugin-device': '1.1.4'
+  'cordova-plugin-device': '1.1.6'
 });
 
 Package.onUse(function (api) {
