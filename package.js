@@ -14,7 +14,7 @@ Npm.depends({
 });
 
 Cordova.depends({
-  'phonegap-plugin-push': '2.1.3',
+  'phonegap-plugin-push': 'file://private/phonegap-plugin-push-master',
   'cordova-plugin-device': '2.0.2'
 });
 
