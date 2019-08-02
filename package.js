@@ -68,6 +68,7 @@ Package.onUse(function (api) {
   api.addFiles('lib/server/server.legacy.js', 'server');
 
   api.export('Push');
+  api.export('PushOverrides');
 
   api.export('_matchToken', {testOnly: true});
   api.export('checkClientSecurity', {testOnly: true});
