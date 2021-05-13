@@ -1,6 +1,6 @@
 Package.describe({
   name: 'raix:push',
-  version: '3.0.3-rc.4',
+  version: '3.0.3-rc.5',
   summary: 'Isomorphic Push notifications for APN and GCM',
   git: 'https://github.com/raix/push.git'
 });
@@ -9,12 +9,12 @@ Package.describe({
 Npm.depends({
   'apn': '1.6.2', // '1.7.4', // working: 1.6.2 // LEGACY
   'node-gcm': '0.9.6', // '0.12.0' // working: 0.9.6 // LEGACY
-  'firebase-admin': '7.2.0',
+  'firebase-admin': '8.10.0',
   'mock-require': '3.0.2'
 });
 
 Cordova.depends({
-  '@mslobodan/phonegap-plugin-push': '2.2.3-1.0.1',
+  'mslobodan_phonegap-plugin-push': '2.2.3-2.1.0',
   'cordova-plugin-device': '2.0.2'
 });
 
