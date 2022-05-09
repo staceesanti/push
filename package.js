@@ -1,6 +1,6 @@
 Package.describe({
   name: 'raix:push',
-  version: '3.0.3-rc.5',
+  version: '3.0.3-meteor-2.7.6',
   summary: 'Isomorphic Push notifications for APN and GCM',
   git: 'https://github.com/raix/push.git'
 });
@@ -30,12 +30,12 @@ Package.onUse(function (api) {
 
   // Keep track of users in the appCollection
   api.use([
-    'accounts-base'
+    'accounts-base@2.2.2'
   ], ['client', 'server'], {weak: true});
 
   api.use([
     'momentjs:moment@2.17.1',
-    'raix:eventstate@0.0.2',
+    'raix:eventstate@0.0.4',
     'check',
     'mongo',
     'underscore',
@@ -87,7 +87,7 @@ Package.onTest(function (api) {
 
   api.use([
     'momentjs:moment@2.17.1',
-    'raix:eventstate@0.0.2',
+    'raix:eventstate@0.0.4',
     'check',
     'mongo',
     'underscore',
