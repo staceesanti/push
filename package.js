@@ -1,6 +1,6 @@
 Package.describe({
   name: 'raix:push',
-  version: '3.0.3-meteor-2.7.6',
+  version: '3.0.3-meteor-2.9.0',
   summary: 'Isomorphic Push notifications for APN and GCM',
   git: 'https://github.com/raix/push.git'
 });
@@ -30,7 +30,7 @@ Package.onUse(function (api) {
 
   // Keep track of users in the appCollection
   api.use([
-    'accounts-base@2.2.2'
+    'accounts-base@2.2.6'
   ], ['client', 'server'], {weak: true});
 
   api.use([
