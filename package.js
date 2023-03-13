@@ -14,7 +14,7 @@ Npm.depends({
 });
 
 Cordova.depends({
-  '@havesource/cordova-plugin-push': '3.0.1',
+  '@jalescardoso/cordova-plugin-push': '4.0.2',
   'cordova-plugin-device': '2.1.0'
 });
 
