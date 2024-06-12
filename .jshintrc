@@ -96,6 +96,8 @@
 		"_removeToken": true,
 		"_replaceToken": true,
 		"checkClientSecurity": true,
-		"initPushUpdates": true
+		"initPushUpdates": true,
+		"subscribeToTopic": true,
+		"unsubscribeFromTopic": true
 	}
 }

@@ -72,6 +72,8 @@ Package.onUse(function (api) {
   api.export('_matchToken', {testOnly: true});
   api.export('checkClientSecurity', {testOnly: true});
   api.export('initPushUpdates', {testOnly: true});
+  api.export('subscribeToTopic', {testOnly: true});
+  api.export('unsubscribeFromTopic', {testOnly: true});
   api.export('_replaceToken', {testOnly: true});
   api.export('_removeToken', {testOnly: true});
 
