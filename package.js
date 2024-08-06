@@ -1,6 +1,6 @@
 Package.describe({
   name: 'raix:push',
-  version: '3.0.3-rc.5',
+  version: '3.0.3-meteor-2.9.0',
   summary: 'Isomorphic Push notifications for APN and GCM',
   git: 'https://github.com/raix/push.git'
 });
@@ -14,8 +14,8 @@ Npm.depends({
 });
 
 Cordova.depends({
-  'mslobodan_phonegap-plugin-push': '2.2.3-2.2.0',
-  'cordova-plugin-device': '2.0.2'
+  '@jalescardoso/cordova-plugin-push': '4.0.2',
+  'cordova-plugin-device': '2.1.0'
 });
 
 Package.onUse(function (api) {
@@ -30,12 +30,12 @@ Package.onUse(function (api) {
 
   // Keep track of users in the appCollection
   api.use([
-    'accounts-base'
+    'accounts-base@2.2.6'
   ], ['client', 'server'], {weak: true});
 
   api.use([
     'momentjs:moment@2.17.1',
-    'raix:eventstate@0.0.2',
+    'raix:eventstate@0.0.4',
     'check',
     'mongo',
     'underscore',
@@ -87,7 +87,7 @@ Package.onTest(function (api) {
 
   api.use([
     'momentjs:moment@2.17.1',
-    'raix:eventstate@0.0.2',
+    'raix:eventstate@0.0.4',
     'check',
     'mongo',
     'underscore',
